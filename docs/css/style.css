@@ -642,36 +642,60 @@ div[class*="__container"] {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-.insta__item:first-child {
-  background: url(../img/insta-img_1.jpg) no-repeat;
+.insta__item:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_1.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_1.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_1.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_1.jpg) no-repeat;
   background-size: cover; }
 
 .insta__item:nth-child(2) {
-  background: url(../img/insta-img_2.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_2.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_2.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_2.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_2.jpg) no-repeat;
   background-size: cover; }
 
 .insta__item:nth-child(3) {
-  background: url(../img/insta-img_3.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_3.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_3.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_3.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_3.jpg) no-repeat;
   background-size: cover; }
 
 .insta__item:nth-child(4) {
-  background: url(../img/insta-img_4.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_4.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_4.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_4.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_4.jpg) no-repeat;
   background-size: cover; }
 
 .insta__item:nth-child(5) {
-  background: url(../img/insta-img_5.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_5.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_5.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_5.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_5.jpg) no-repeat;
   background-size: cover; }
 
 .insta__item:nth-child(6) {
-  background: url(../img/insta-img_6.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_6.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_6.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_6.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_6.jpg) no-repeat;
   background-size: cover; }
 
 .insta__item:nth-child(7) {
-  background: url(../img/insta-img_7.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_7.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_7.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_7.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_7.jpg) no-repeat;
   background-size: cover; }
 
 .insta__item:nth-child(8) {
-  background: url(../img/insta-img_8.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/insta-img_8.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_8.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_8.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_8.jpg) no-repeat;
   background-size: cover; }
 
 @media (max-width: 600px) {
