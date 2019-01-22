@@ -1,0 +1,16 @@
+// assets and script style addons
+
+// global styles
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+@import "fonts.scss";
+@import "svg_sprite.scss";
+@import "main.scss";
+
+// BEM blocks
+@import "../../blocks/intro/intro.scss";
+@import "../../blocks/brands/brands.scss";
+@import "../../blocks/insta/insta.scss";
+@import "../../blocks/footer/footer.scss";

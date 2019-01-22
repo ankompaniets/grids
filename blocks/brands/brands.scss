@@ -1,0 +1,61 @@
+// В этом файле должны быть стили для БЭМ-блока brands, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.brands {
+	display: grid;
+	justify-items: center;
+	background-color: #fff; 
+}
+
+.brands__container {
+	grid-template-rows: 373px 373px 586px;
+  grid-template-columns: repeat(3, 463px);
+	padding-top: 83px;
+	padding-bottom: 82px;
+	grid-gap: 55px;
+}
+
+.brands__item:first-child {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 3;
+	grid-column-end: 3;
+	background: url(../img/brand-img_1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.brands__item:nth-child(2) {
+	background: url(../img/brand-img_2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.brands__item:nth-child(3) {
+	background: url(../img/brand-img_3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.brands__item:nth-child(4) {
+	background: url(../img/brand-img_4.jpg) no-repeat;
+	background-size: cover;
+}
+
+.brands__item:nth-child(5) {
+	background: url(../img/brand-img_5.jpg) no-repeat;
+	background-size: cover;
+}
+
+.brands__item:nth-child(6) {
+	background: url(../img/brand-img_6.jpg) no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 1500px) {
+
+	.brands__container {
+		grid-template-rows: 373px 373px 586px;
+	  grid-template-columns: repeat(3, calc(33.33% - 40px/3));
+		grid-gap: 20px;
+	}
+}

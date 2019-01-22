@@ -1,0 +1,59 @@
+// В этом файле должны быть стили для БЭМ-блока insta, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.insta {
+	position: relative;
+	display: grid;
+	grid-template-rows: repeat(2, 425px);
+  grid-template-columns: repeat(4, 25%);
+}
+
+.insta-title__box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.insta__item:first-child {
+	background: url(../img/insta-img_1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.insta__item:nth-child(2) {
+	background: url(../img/insta-img_2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.insta__item:nth-child(3) {
+	background: url(../img/insta-img_3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.insta__item:nth-child(4) {
+	background: url(../img/insta-img_4.jpg) no-repeat;
+	background-size: cover;
+}
+
+.insta__item:nth-child(5) {
+	background: url(../img/insta-img_5.jpg) no-repeat;
+	background-size: cover;
+}
+
+.insta__item:nth-child(6) {
+	background: url(../img/insta-img_6.jpg) no-repeat;
+	background-size: cover;
+}
+
+.insta__item:nth-child(7) {
+	background: url(../img/insta-img_7.jpg) no-repeat;
+	background-size: cover;
+}
+
+.insta__item:nth-child(8) {
+	background: url(../img/insta-img_8.jpg) no-repeat;
+	background-size: cover;
+}

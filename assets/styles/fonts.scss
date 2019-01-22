@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('../fonts/montserrat.woff2') format('woff2'), url('../fonts/montserrat.woff') format('woff'), url('../fonts/montserrat.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: local('ProximaNova'), url('../fonts/ProximaNova-Regular.ttf') format('ttf'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.eot') format('eot');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaLight';
+	src: local('ProximaNova'), url('../fonts/ProximaNova-Light.ttf') format('ttf'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.eot') format('eot');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaSemibold';
+	src: local('ProximaNova'), url('../fonts/ProximaNova-Semibold.ttf') format('ttf'), url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.eot') format('eot');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: local('ProximaNova'), url('../fonts/ProximaNova-Bold.ttf') format('ttf'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.eot') format('eot');
+	font-style: normal;
+}
