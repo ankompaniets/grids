@@ -18,9 +18,37 @@
 	transform: translate(-50%, -50%);
 }
 
+.insta-title__box h1 {
+	margin: -14px 0 33px;
+}
+
 @for $i from 1 through 8 {
   .insta__item:nth-child(#{$i}) {
   	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/insta-img_#{$i}.jpg) no-repeat;
 		background-size: cover;
   }
+}
+
+@media (max-width: 1200px) {
+
+	.insta .insta__item {
+		background-position: 50% 50%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.insta {
+		grid-template-rows: repeat(4, 425px);
+	  grid-template-columns: repeat(2, 50%);
+	}
+}
+
+
+@media (max-width: 480px) {
+
+	.insta {
+		grid-template-rows: repeat(6, 425px);
+	  grid-template-columns: 100%;
+	}
 }
