@@ -3,4 +3,101 @@
 @import "../../assets/styles/variables.scss";
 @import "../../assets/styles/mixins.scss";
 
-.footer {}
+.footer {
+	display: grid;
+	justify-items: center;
+	background-color: #fff;
+}
+
+.footer__container {
+	grid-template-rows: auto;
+	grid-template-columns: auto repeat(2, 1fr);
+	grid-gap: 70px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.footer__copyright {
+	font-family: 'ProximaNovaSemibold';
+	font-size: 18px;
+	letter-spacing: 5.5px;
+	text-transform: uppercase;
+}
+
+.footer__nav {
+
+}
+
+.footer__nav .nav__list-item-link {
+	color: #000;
+}
+
+.social {
+	justify-self: end;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.social__item {
+	background: url(../img/social-icons_sprite.png) no-repeat;
+	transition: 0s;
+}
+
+.social__item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.social__item--insta {
+	width: 27px;
+	height: 27px;
+	background-position: 0px -2px;
+}
+
+.social__item--insta:hover {
+	background-position: 0px -34px;
+}
+
+.social__item--fb {
+	width: 16px;
+	height: 29px;
+	background-position: -34px -2px;
+}
+
+.social__item--fb:hover {
+	background-position: -34px -34px;
+}
+
+.social__item--tw {
+	width: 27px;
+	height: 22px;
+	background-position: -59px -3px;
+}
+
+.social__item--tw:hover {
+	background-position: -59px -35px;
+}
+
+@media (max-width: 1240px) {
+
+	.footer__container {
+		grid-template-rows: auto auto;
+		grid-template-columns: repeat(2, auto)
+	}
+
+	.footer__copyright {
+		grid-row-start: 2;
+		grid-column-start: 1;
+		grid-column-end: 1;
+	}
+
+	.social {
+		grid-row-start: 2;
+		grid-column-start: 2;
+		justify-self: end;
+	}
+}

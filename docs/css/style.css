@@ -506,8 +506,8 @@ div[class*="__container"] {
 
 .nav__list-item-link {
   font-family: 'ProximaNovaSemibold';
-  font-size: 22.5px;
-  letter-spacing: 5px;
+  font-size: 18px;
+  letter-spacing: 5.5px;
   color: #fff;
   text-transform: uppercase;
   -webkit-transition: 0.3s ease-out;
@@ -521,7 +521,7 @@ div[class*="__container"] {
   text-align: center;
   font-family: 'ProximaNovaLight';
   font-size: 60px;
-  letter-spacing: 40px;
+  letter-spacing: 31px;
   color: white;
   line-height: 1.167; }
 
@@ -529,7 +529,7 @@ div[class*="__container"] {
   font-family: 'ProximaNovaBold';
   text-align: center;
   font-size: 30px;
-  letter-spacing: 20px;
+  letter-spacing: 13px;
   color: #f84545;
   text-transform: uppercase; }
 
@@ -599,11 +599,7 @@ div[class*="__container"] {
   padding-bottom: 82px;
   grid-gap: 55px; }
 
-.brands__item:first-child {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 3;
+.brands__item:nth-child(1) {
   background: url(../img/brand-img_1.jpg) no-repeat;
   background-size: cover; }
 
@@ -626,6 +622,73 @@ div[class*="__container"] {
 .brands__item:nth-child(6) {
   background: url(../img/brand-img_6.jpg) no-repeat;
   background-size: cover; }
+
+.brands__item-link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out; }
+
+.brands__item-link:hover:after {
+  opacity: 0; }
+
+.brands__item-link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(26, 26, 26, 0.7)), to(rgba(26, 26, 26, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0) 100%);
+  background-image: linear-gradient(to top, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0) 100%);
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out; }
+
+.brands__item-descr {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2; }
+
+.brands__item-descr-logo {
+  margin-bottom: 35px; }
+
+.brands__item-descr-name {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'ProximaNovaLight';
+  font-size: 40px;
+  letter-spacing: 15px;
+  text-transform: uppercase; }
+
+.brands__item:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3; }
+
+.brands__item:first-child .brands__item-descr {
+  bottom: 61px;
+  left: 56px; }
+
+.brands__item:first-child .brands__item-descr-name {
+  font-size: 60px;
+  letter-spacing: 20px; }
 
 .insta {
   position: relative;
@@ -698,6 +761,75 @@ div[class*="__container"] {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/insta-img_8.jpg) no-repeat;
   background-size: cover; }
 
+.footer {
+  display: grid;
+  justify-items: center;
+  background-color: #fff; }
+
+.footer__container {
+  grid-template-rows: auto;
+  grid-template-columns: auto repeat(2, 1fr);
+  grid-gap: 70px;
+  padding-top: 64px;
+  padding-bottom: 64px; }
+
+.footer__copyright {
+  font-family: 'ProximaNovaSemibold';
+  font-size: 18px;
+  letter-spacing: 5.5px;
+  text-transform: uppercase; }
+
+.footer__nav .nav__list-item-link {
+  color: #000; }
+
+.social {
+  justify-self: end;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.social__item {
+  background: url(../img/social-icons_sprite.png) no-repeat;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s; }
+
+.social__item:not(:last-child) {
+  margin-right: 40px; }
+
+.social__item--insta {
+  width: 27px;
+  height: 27px;
+  background-position: 0px -2px; }
+
+.social__item--insta:hover {
+  background-position: 0px -34px; }
+
+.social__item--fb {
+  width: 16px;
+  height: 29px;
+  background-position: -34px -2px; }
+
+.social__item--fb:hover {
+  background-position: -34px -34px; }
+
+.social__item--tw {
+  width: 27px;
+  height: 22px;
+  background-position: -59px -3px; }
+
+.social__item--tw:hover {
+  background-position: -59px -35px; }
+
 @media (max-width: 600px) {
   html {
     height: 100%;
@@ -712,3 +844,16 @@ div[class*="__container"] {
     grid-template-rows: 373px 373px 586px;
     grid-template-columns: repeat(3, calc(33.33% - 40px/3));
     grid-gap: 20px; } }
+
+@media (max-width: 1240px) {
+  .footer__container {
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, auto); }
+  .footer__copyright {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 1; }
+  .social {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    justify-self: end; } }
