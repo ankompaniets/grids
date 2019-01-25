@@ -84,13 +84,13 @@
 		align-content: center;
 		grid-row-start: 2;
 		grid-column-start: 2;
-		min-height: 100px;
+		min-height: 150px;
 	}
 }
 
 @media (max-width: 980px) {
 
-	.intro__nav {
+	.intro .intro__nav {
 		grid-column-start: 1;
 	}
 }

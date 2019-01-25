@@ -138,12 +138,27 @@
 		font-size: 24px;
 		letter-spacing: 25px;
 	}
+
+	.brands__item-descr-logo img {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.brands .brands__container {
+		grid-template-rows: repeat(6, 580px);
+		grid-template-columns: 100%;
+	}
+
+	.brands__item .brands__item-descr {
+		width: 80%;
+	}
 }
 
 @media (max-width: 480px) {
 
-	.brands__container {
-		grid-template-rows: repeat(6, 580px);
-		grid-template-columns: 100%;
+	.brands__item .brands__item-descr .brands__item-descr-name {
+		font-size: 16px;
 	}
 }
