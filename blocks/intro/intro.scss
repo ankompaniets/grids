@@ -66,16 +66,38 @@
 	text-transform: uppercase;
 }
 
-.intro__move-down {
+.intro__move-down-wrapper {
+	position: relative;
 	justify-self: center;
+	width: 85px;
+	min-height: 160px;
+}
+
+.intro__move-down-wrapper:hover .intro__move-down {
+	animation-play-state: paused;
+}
+
+.intro__move-down {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 13px;
 	width: 60px;
 	height: 60px;
+	padding: 0;
 	border: 3px solid #fff;
 	border-top: none;
 	border-left: none;
 	background: transparent;
 	transform: rotate(45deg);
 	transition: .3s ease-out;
+	animation: moving  1.5s alternate ease-in-out forwards infinite;
+	animation-delay: 0.2s;
+}
+
+@keyframes moving {
+  from {top: 0;}
+  to {top: 30%}
 }
 
 .intro__move-down:hover {
