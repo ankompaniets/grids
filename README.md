@@ -1,4 +1,4 @@
-Оценить красоту сего творения можно здесь - https://ankompaniets.github.io/grids/. Welcome!)
+You can estimate beauty of this creation right here: https://ankompaniets.github.io/grids/. Welcome!) If you are the perfect-pervent, u can change min-height of .intro on 895px and compare page with mockup))
 
 # Проект с gulp 
 

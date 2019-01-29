@@ -6,7 +6,7 @@
 .intro {
 	display: grid;
 	justify-items: center;
-	min-height: 895px;
+	min-height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/header-slider_img.jpg) no-repeat;
   background-size: cover;  
 }
@@ -16,7 +16,7 @@
 	grid-template-columns: 100%;
 	align-content: space-between;
 	padding-top: 41px;
-	padding-bottom: 80px;
+	padding-bottom: 20px;
 }
 
 .header {
@@ -70,7 +70,7 @@
 	position: relative;
 	justify-self: center;
 	width: 85px;
-	min-height: 160px;
+	min-height: 140px;
 }
 
 .intro__move-down-wrapper:hover .intro__move-down {
@@ -102,13 +102,6 @@
 
 .intro__move-down:hover {
 	border-color: #f84545;
-}
-
-@media (max-width: 1699px) {
-
-	.intro {
-		min-height: 100vh;
-	}
 }
 
 @media (max-width: 1100px) {
