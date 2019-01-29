@@ -17,11 +17,11 @@ html {
 //----------------------------------------------------------------------
 
 *, *::before, *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'ProximaNova', Arial, sans-serif;
 	font-size: 18px;
 	color: $text-color;
 }
@@ -30,6 +30,25 @@ a {
 	padding-bottom: 2px;
 	color: $link-color;
 	text-decoration: none;
+}
+
+div[class*="__container"] {
+	display: grid;
+	max-width: 1500px;
+	width: 100%;
+}
+
+@media (max-width: 1500px) {
+
+	div[class*="__container"] {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.page {
+	display: grid;
+	grid-auto-rows: auto;
 }
 
 /* normalized select for all browsers */

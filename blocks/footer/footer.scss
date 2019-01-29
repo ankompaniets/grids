@@ -18,17 +18,18 @@
 }
 
 .footer__copyright {
-	font-family: 'ProximaNovaSemibold';
+	font-family: 'ProximaNova';
 	font-size: 18px;
-	letter-spacing: 5.5px;
+	letter-spacing: 6px;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
-.footer__nav .nav__list-item-link {
+.nav__list--blackFont .nav__list-item-link {
 	color: #000;
 }
 
-.footer__nav .nav__list-item-link:hover {
+.nav__list--blackFont .nav__list-item-link:hover {
 	color: #f84545;
 }
 

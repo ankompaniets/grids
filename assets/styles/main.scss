@@ -1,21 +1,3 @@
-* {
-	box-sizing: border-box;
-}
-
-div[class*="__container"] {
-	display: grid;
-	max-width: 1500px;
-	width: 100%;
-}
-
-.page {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 895px auto auto auto;
-	grid-column-gap: 0;
-	grid-row-gap: 0;
-}
-
 .nav__list {
 	display: flex;	
 	margin: 0;
@@ -28,9 +10,9 @@ div[class*="__container"] {
 }
 
 .nav__list-item-link {
-	font-family: 'ProximaNovaSemibold';
 	font-size: 18px;
 	letter-spacing: 5.5px;
+	font-weight: 600;
 	color: #fff;
 	text-transform: uppercase;
 	transition: 0.3s ease-out;
@@ -38,35 +20,6 @@ div[class*="__container"] {
 
 .nav__list-item-link:hover {
 	color: #f84545;
-}
-
-.title {
-
-}
-
-.title h1 {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
-	font-family: 'ProximaNovaLight';	
-  font-size: 60px;
-  letter-spacing: 31px;
-  color: rgb(255, 255, 255);
-  line-height: 1.167;  
-}
-
-.title div {
-	font-family: 'ProximaNovaBold';
-	text-align: center;
-	font-size: 30px;
-	letter-spacing: 13px;
-	color: #f84545;
-	text-transform: uppercase;
 }
 
 @media (max-width: 799px) {
@@ -78,16 +31,5 @@ div[class*="__container"] {
 
 	.nav .nav__list-item {
 		margin: 10px;
-	}
-}
-
-@media (max-width: 600px) {
-
-	div.title h1 {
-		font-size: 18px;
-	}
-
-	div.title div {
-		font-size: 16px;
 	}
 }

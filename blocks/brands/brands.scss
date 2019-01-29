@@ -18,30 +18,12 @@
 }
 
 .brands__item {
+	position: relative;
+	background-color: #888;
 	overflow: hidden;
 }
 
-@for $i from 1 through 6 {
-  .brands__item:nth-child(#{$i}) {
-  	background: url(../img/brand-img_#{$i}.jpg) no-repeat;
-		background-size: cover;
-  }
-}
-
-.brands__item-link {
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	transition: .3s ease-out;
-}
-
-.brands__item-link:hover:after {
-	opacity: 0;
-}
-
-.brands__item-link:after {
+.brands__item:after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -52,11 +34,36 @@
 	transition: .3s ease-out;
 }
 
-.brands__item-descr {
+.brands__item:hover:after {
+	opacity: 0;
+}
+
+.brands__item-img {
 	position: absolute;
-	bottom: 30px;
-	left: 40px;
-	z-index: 2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	object-fit: cover;
+  object-position: center;    
+  height: 100%;
+  width: 100%;
+}
+
+.brands__item-img--alignRight {
+	object-position: right;
+}
+
+.brands__item-link {
+	position: absolute;
+	display: flex;
+	align-items: flex-end;
+	padding: 30px 40px;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	transition: .3s ease-out;
+	z-index: 1;
 }
 
 .brands__item-descr-logo {
@@ -70,25 +77,22 @@
 	display: -o-flex;
 	display: flex;
 	flex-direction: column;
-	font-family: 'ProximaNovaLight';
+	font-weight: 300;
 	font-size: 40px;
 	letter-spacing: 15px;
 	text-transform: uppercase;
 }
 
-.brands__item:first-child {
-	grid-row-start: 1;
-	grid-column-start: 1;
-	grid-row-end: 3;
-	grid-column-end: 3;
+.brands__item--4x {
+	grid-row: span 2;
+  grid-column: span 2;
 }
 
-.brands__item:first-child .brands__item-descr {
-	bottom: 47px;
-	left: 55px;
+.brands__item--4x .brands__item-link {
+	padding: 47px 55px;
 }
 
-.brands__item:first-child .brands__item-descr-name {
+.brands__item--4x .brands__item-descr-name {
 	font-size: 60px;
 	letter-spacing: 25px;
 }
@@ -97,7 +101,7 @@
 
 	.brands__container {
 		grid-template-rows: 373px 373px 586px;
-	  grid-template-columns: repeat(3, calc(33.33% - 40px/3));
+	  grid-template-columns: repeat(3, 1fr);
 		grid-gap: 20px;
 	}
 }
@@ -106,6 +110,7 @@
 
 	.brands__item-descr-name {
 		font-size: 24px;
+		letter-spacing: 10px;
 	}
 }
 
@@ -116,27 +121,27 @@
 		grid-template-columns: repeat(2, calc(50% - 40px/2));
 	}
 
-	.brnads__item:nt-child(even) {
-		grid-column-start: 2;
+	.brands__item--4x {
+		grid-row: span 1;
+    grid-column: span 1;
 	}
 
-	.brnads__item:nt-child(odd) {
-		grid-column-start: 1;
+	.brands__item-link {
+		padding: 20px;
 	}
 
-	.brands__item:first-child {
-		grid-row-end: 1;
-		grid-column-end: 1;
-	}
-
-	.brands__item:first-child .brands__item-descr {
-		bottom: 30px;
-		left: 40px;
-	}
-
-	.brands__item:first-child .brands__item-descr-name {
+	.brands__item-descr-name {
 		font-size: 24px;
-		letter-spacing: 25px;
+		letter-spacing: 10px;
+	}
+
+	.brands__item--4x .brands__item-link {
+		padding: 20px;
+	}
+
+	.brands__item--4x .brands__item-descr-name {
+		font-size: 24px;
+		letter-spacing: 10px;
 	}
 
 	.brands__item-descr-logo img {
@@ -151,8 +156,12 @@
 		grid-template-columns: 100%;
 	}
 
-	.brands__item .brands__item-descr {
-		width: 80%;
+	.brands__item-link {
+		padding: 30px;
+	}
+
+	.brands__item--4x .brands__item-link {
+		padding: 30px;
 	}
 }
 

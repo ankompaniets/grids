@@ -6,6 +6,7 @@
 .intro {
 	display: grid;
 	justify-items: center;
+	min-height: 895px;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/header-slider_img.jpg) no-repeat;
   background-size: cover;  
 }
@@ -36,8 +37,33 @@
 	font-size: 0;
 }
 
-.intro__title-box h1 {
-  margin: 12px 0 36px;
+.intro__title-header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+  padding-left: 38px;
+  font-size: 60px;
+  line-height: 115px;
+  font-weight: 300;
+  letter-spacing: .6em;
+  color: #fff;  
+}
+
+.intro__title-descr {
+	padding-left: 5px;
+	font-size: 30px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: .4em;
+  text-align: center;
+	color: #f84545;
+	text-transform: uppercase;
 }
 
 .intro__move-down {
@@ -56,21 +82,12 @@
 	border-color: #f84545;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1699px) {
 
-	div[class*="__container"] {
-		padding-left: 20px;
-		padding-right: 20px;
+	.intro {
+		min-height: 100vh;
 	}
 }
-
-@media (max-width: 1200px) {
-
-	.brands .brands__item {
-		background-position: 50% 50%;
-	}
-}
-
 
 @media (max-width: 1100px) {
 
@@ -97,7 +114,26 @@
 
 @media (max-width: 768px) {
 
-	.title h1 {
+	.intro__title-header {
+		padding-left: 0;
 		font-size: 36px;
+		line-height: 60px;
+	}
+
+	.intro__title-descr {
+		padding-left: 0;
+		font-size: 24px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.intro__title-header {
+		font-size: 18px;
+	}
+
+	.intro__title-descr {
+		font-size: 16px;
 	}
 }

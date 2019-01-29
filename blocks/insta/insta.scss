@@ -15,7 +15,7 @@
 	margin-right: 35px;
 }
 
-.insta-title__box {
+.insta__title {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -23,9 +23,34 @@
 	transform: translate(-50%, -50%);
 }
 
-.insta-title__box h1 {
-	margin: -14px 0 33px;
+.insta__title-header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+  padding-left: 30px;
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: 300;
+  letter-spacing: .6em;
+  color: #fff;
 }
+
+.insta__title-descr {
+	padding-left: 5px;
+	font-size: 30px;
+  line-height: 68px;
+  font-weight: 700;
+  letter-spacing: .4em;
+  text-align: center;
+  color: #f84545;
+}
+
 
 @for $i from 1 through 8 {
   .insta__item:nth-child(#{$i}) {
@@ -39,10 +64,6 @@
 	.insta .insta__item {
 		background-position: 50% 50%;
 	}
-
-	.insta-title__box .title h1 span:not(:last-child) {
-		margin-right: 0;
-	}
 }
 
 @media (max-width: 768px) {
@@ -51,6 +72,33 @@
 		grid-template-rows: repeat(4, 425px);
 	  grid-template-columns: repeat(2, 50%);
 	}
+
+  .footer__nav .nav__list {
+    flex-direction: column;
+  }
+
+  .insta__title-header {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .insta__title-descr {
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .insta__title-header {
+    font-size: 18px;
+  }
+
+  .insta__title-descr {
+    font-size: 16px;
+  }
 }
 
 
@@ -59,11 +107,5 @@
 	.insta {
 		grid-template-rows: repeat(6, 425px);
 	  grid-template-columns: 100%;
-	}
-
-	.insta-title__box .title h1 {
-		flex-direction: column;
-		align-items: center;
-		letter-spacing: 15px;    
 	}
 }
